@@ -4,6 +4,6 @@ echo "***************************"
 echo "** Building jar ***********"
 echo "***************************"
 
-WORKSPACE=/var/jenkins_home/workspace/Pipeline-Maven-Udemy
+WORKSPACE=/home/ec2-user/jenkins/jenkins_data/workspace/Pipeline-Maven-Udemy
 
 docker run --rm  -v  $WORKSPACE/java-app:/app -v /root/.m2/:/root/.m2/ -w /app maven:3-alpine "$@"
